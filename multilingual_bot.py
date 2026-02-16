@@ -3,7 +3,33 @@ Complete VPN Shop Bot - Multilingual Edition
 Languages: English 🇬🇧, Russian 🇷🇺, Hindi 🇮🇳, Arabic 🇸🇦
 With Real Payment Integration
 """
+import os
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from flask import Flask, request
 
+# قراءة المتغيرات من البيئة
+TOKEN = os.environ.get('BOT_TOKEN')  # سنضيفها في Render
+PORT = int(os.environ.get('PORT', 8443))
+
+# باقي الكود الموجود...
+# ...
+
+if name == '__main__':
+    updater = Updater(TOKEN, use_context=True)
+    dp = updater.dispatcher
+    
+    # أضف الـ handlers هنا
+    # dp.add_handler(...)
+    
+    # للتشغيل على Render استخدم webhook
+    updater.start_webhook(
+        listen="0.0.0.0",
+        port=PORT,
+        url_path=TOKEN,
+        webhook_url=f"https://Teleswiftvpn/{TOKEN}"
+    )
+    
+    updater.idle()
 import json
 import sqlite3
 import logging
