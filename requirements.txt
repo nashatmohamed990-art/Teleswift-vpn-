@@ -1,6 +1,1 @@
-python-telegram-bot==13.15
-requests
-python-dotenv
-flask==2.3.0
-gunicorn==21.2.0
-pillow
+python-telegram-bot==20.7
