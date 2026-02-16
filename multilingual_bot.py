@@ -4,7 +4,7 @@ Languages: English 🇬🇧, Russian 🇷🇺, Hindi 🇮🇳, Arabic 🇸🇦
 With Real Payment Integration
 """
 import os
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram.ext import Updater, CommandHandler, MessageHandler, filters
 from flask import Flask, request
 
 # قراءة المتغيرات من البيئة
