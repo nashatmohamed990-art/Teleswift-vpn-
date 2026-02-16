@@ -1,6 +1,6 @@
 {
-    "bot_token": "",
-    "admin_ids": [],
+    "bot_token": "8529629429:AAGBa15pFNrkiknNYfiTe7vy_mpOT3Jts3A",
+    "admin_ids": [2005350858],
     "trial_days": 3,
     "referred_trial_days": 7,
     "support_username": ""
