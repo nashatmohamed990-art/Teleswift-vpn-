@@ -58,7 +58,7 @@ TRANSLATIONS = {
     'en': {
         'flag': ' ',
         'name': 'English',
-        'welcome': ' Welcome, {name}!\n\n <b>Premium VPN Service</b>\n\n <b>Features:</b>\n• 
+        'welcome': ' Welcome, {name}!\n\n <b>Premium VPN Service</b>\n\n <b>Features:</b>\n•) 
         'welcome_referred': '\n\n <b>You were referred!</b>\nGet 7 days FREE trial instead of 3!',
         'welcome_trial': '\n\n Get 3 days <b>FREE TRIAL</b> now!',
         'choose_option': '\n\nChoose an option below:',
