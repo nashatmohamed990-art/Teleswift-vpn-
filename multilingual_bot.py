@@ -381,11 +381,11 @@ def get_language_keyboard():
     return InlineKeyboardMarkup(keyboard)
 # Subscription plans
 PLANS = {
-    "durations": [30, 60, 180, 365],
+    "durations": [30, 60, 180],
     "plans": [
-        {"name": "Basic", "devices": 1, "prices": {"30": 5, "60": 9, "180": 25, "365": 45}},
-        {"name": "Standard", "devices": 3, "prices": {"30": 10, "60": 18, "180": 50, "365": 90}},
-        {"name": "Premium", "devices": 5, "prices": {"30": 15, "60": 27, "180": 75, "365": 135}}
+        {"name": "Basic", "devices": 1, "prices": {"30": 100  ₽, "60": 190 ₽, "180": 280  ₽  }},
+        {"name": "Standard", "devices": 3, "prices": {"30": 180 ₽, "60": 400 ₽, "180": 600 ₽  }},
+        {"name": "Premium", "devices": 5, "prices": {"30": 400 ₽, "60": 900 ₽, "180":1300 ₽    }}
     ]
 }
 # Main handlers
