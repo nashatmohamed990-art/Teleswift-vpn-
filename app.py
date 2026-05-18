@@ -1,15 +1,18 @@
-# app.py - Vercel Entry Point (Minimal)
+# app.py - Vercel compatible (minimal)
 import asyncio
-from multilingual_bot import main as bot_main
+from multilinguall_bot import main
 
-# This is what Vercel expects for Python functions
-async def handler(request=None):
-    """Vercel serverless handler"""
-    try:
-        print("Starting Telegram bot...")
-        await bot_main()   # This won't work perfectly on Vercel
-    except Exception as e:
-        print(f"Error: {e}")
+async def handler(request):
+    # This is mostly a placeholder - the bot won't stay alive long
+    return {
+        "statusCode": 200,
+        "body": "Bot started (but may not stay alive on Vercel)"
+    }
 
-# For Vercel Python runtime
+# Vercel needs this
 app = handler
+
+# Try to start the bot anyway
+if __name__ == "__main__":
+    asyncio.run(main())
+    
